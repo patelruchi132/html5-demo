@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <title>Form Page</title>
+    <style>
+        #eml{
+            padding-right: 7px;
+            margin-left: 30px;
+        }
+       span{
+           margin-left: 11.3%;
+       }
+       input{
+           width: 270px;
+           margin-left: 20px;
+       }
+       #dobirth{
+           padding:30px;
+           text-align: end;
+          
+       }
+       #gen{
+           padding:30px;
+           margin-left: 40px;
+       }
+    </style>
+</head>
+<body>
+    <div>
+    <h3>Personal Information</h3>
+    <label for="fname" style="text-align: end; margin-left: 50px; padding-right: 10px;" >First Name:</label>
+    <input id="fname" type="text" autocomplete="name"><br><br>
+
+    <label for="lname"  style="text-align: end; margin-left: 50px; padding-right: 10px;">Last Name:</label>
+    <input id="lname" type="text" autocomplete="name"><br><br>
+
+    <label for="dob" id="dobirth">Date Of Birth:</label>
+    <select id="dob" name="Month" style="padding-right: 30px;" required >
+        <option value="">Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+    </select>
+    <select id="dob" name="day" style="margin-left: 10px; padding-right: 20px;" required>
+        <option value="">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+
+    </select>
+    <select id="dob" name="Year" style="margin-left: 10px;" required>
+        <option value="">Year</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+    </select><br><br>
+
+    <label for="gender" id="gen" >Gender:</label>
+    <select id="gender" name="gendr" style="padding-right: 100px;" required>
+        <option value="">Choose a gender</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+    </select><br><br>
+    </div>
+    <div>
+        <h3>Account Information</h3>
+        <label for="email" id="eml" style="text-align: end; margin-left: 80px;">Email:</label>
+        <input id="email" type="email" name="email" aria-describedby="emil"><br>
+        <span id="emil">(Your email address will be your username)</span><br>
+
+        <label for="Re-type-email" style="text-align: end; margin-left: 30px;">Re-type Email:</label>
+        <input id="retypeemail" type="email" name="retypeemail" ><br><br>
+
+        <label for="password" style="text-align: end; margin-left: 60px;">Password:</label>
+        <input id="password" type="password" name="password" aria-describedby="passwrd" ><br>
+        <span id="passwrd" >(Min.8 characters,1 number,case-sensitive.)</span><br>
+
+        <label for="re-type-password" style="text-align: end; margin-left: 10px;">Re-type Password:</label>
+        <input id="retypepassword" type="password" name="retypepassword" ><br><br>
+
+        <label for="security-qun" style="text-align: end; margin-left: 10px; padding-right: 20px;">Security Question:</label>
+        <select id="security-qun" style="padding-right: 70px;" required>
+            <option >Choose a security Question:</option>
+        </select><br><br>
+
+        <label for="security-ans" style="text-align: end; margin-left: 15px;">Security Answer:</label>
+        <input id="security-ans" type="text" name="securityanswer" aria-describedby="securityans"><br>
+        <span id="securityans">(Not case-sensitive)</span><br><br>
+    </div>
+
+    <div>
+        <h3>Contact Information</h3>
+        <label for="address" style="text-align: end; margin-left: 65px;">Address:</label>
+        <input id="address" type="text"name="your_addresss" aria-required="true"><br><br>
+
+        <label for="city" style="text-align: end; margin-left: 90px;">City:</label>
+        <input id="city" type="text"name="your_city" ><br><br>
+
+        <label for="state" style="text-align: end; margin-left: 85px; padding-right: 20px;">State:</label>
+        <select id="state" name="state">
+            <option value="">Choose a state:</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="hariyana">Hariyana</option>
+            <option value="panjab">Panjab</option>
+        </select><br><br>
+        
+        <label for="zipcode"  style="text-align: end; margin-left: 58px;">Zip Code:</label>
+        <input id="zipcode" type="number" name="zipnum"  required><br><br>
+        
+        <label for="phone"  style="text-align: end; margin-left: 75px;">Phone:</label>
+        <input id="phone" type="number" name="phonenum" aria-describedby="phonenumber" required><br>
+        <span id="phonenumber">(No space or dashs)</span>
+    </div>
+</body>
+</html>
