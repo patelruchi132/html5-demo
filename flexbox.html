@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>FlexBox Image</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        .heading{
+            border: 1px solid black;
+            text-align: center;
+            width: 100%;
+            padding: 10px 45px;
+            font: bold;
+            font-size: 15px;
+        }
+        .column{
+            float: left;
+            width: 100%;
+            padding: 10px;
+            height: 200px;
+           
+        }
+        .child{
+            background-color:rgb(47, 47, 221);
+            padding: 15px;
+            width: 80px;
+            font-size: 15px;
+            text-align: center;
+            color: white;
+           
+             }
+             .row{
+                 justify-content: center;
+             }
+        @media screen and (max-width:800px) {
+            .column ,.heading{
+                width:50%;
+            }
+            .child{
+                background-color:rgb(47, 47, 221);
+                padding: 15px;
+                width: 50px;
+                font-size: 10px;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .column{
+                width:30%
+            }
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+       
+        <div class="row">
+            <div class="heading">Design 1</div>
+            <div class="column" id="child1" style="background-color: rgb(179, 210, 240); border: 1px solid rgb(136, 192, 248);">
+                <div class="child" style="margin-left:35px;">Child</div>
+                <div style="padding:50px 60px 60px 60px;"><b>1</b></div>
+            </div>
+
+            <div class="column" style="background-color: rgb(207, 246, 209); border: 1px solid rgb(169, 226, 171);">
+                <div style="text-align:center"><b>2</b></div>
+                <p style="background-color: rgb(246, 242, 207) ; padding:70px 0 55px 0; text-align: center;margin-top: 2px; ">View outer margin should be smae on all side</p>
+                
+            </div>
+            
+            <div class="column" style="background-color: rgb(240, 235, 192); border: 1px solid rgb(228, 218, 147)">
+                <div style="padding:90px 60px 54px 60px;"><b>3</b></div>
+                <p class="child" style="margin-left: 30px;">Child</p>
+               
+            </div>
+            
+            <div class="column"  style="background-color: rgb(224, 212, 245);  border: 1px solid rgb(213, 193, 247) ">
+                <div style="text-align: center;"><b>4</b></div>
+                <p class="child" style="margin: 50px 50px 50px 35px;">Child</p>
+            </div>
+        </div>
+</body>
+</html>
