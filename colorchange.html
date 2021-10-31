@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>change colors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        .loader{
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            height: 200px;
+            background-color: #b9ff57;
+            animation-name: rotate;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+                /* border-radius: 0; */
+                background-color: rgb(243, 228, 94);
+            }
+            10%{
+                transform: rotate(35deg);
+                /* border-radius: 50%; */
+                background-color: red;
+            }
+            25%{
+                transform: rotate(60deg);
+                /* border-radius: 50%; */
+                background-color: rgb(19, 187, 56);
+            }
+            50%{
+                transform: rotate(90deg);
+                /* border-radius: 50%; */
+                background-color: rgb(200, 255, 0);
+            }
+            65%{
+                transform: rotate(140deg);
+                /* border-radius: 50%; */
+                background-color: rgb(221, 221, 223);
+            }
+            75%{
+                transform: rotate(200deg);
+                /* border-radius: 50%; */
+                background-color: rgb(255, 0, 170);
+            }
+            85%{
+                transform: rotate(250deg);
+                /* border-radius: 50%; */
+                background-color: rgb(0, 68, 255);
+            }
+            95%{
+                transform: rotate(300deg);
+                /* border-radius: 50%; */
+                background-color: rgb(0, 68, 255);
+            }
+
+            100%{
+                transform: rotate(360deg);
+                /* border-radius: 50%; */
+                background-color: rgb(0, 255, 128);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="loader">  
+         </div>
+</body>
+</html>
