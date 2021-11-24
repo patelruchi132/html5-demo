@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox1</title>
+    <style>
+        * {
+        font-family: Arial,sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        }
+        .flex-container {
+        width: auto !important;
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: DodgerBlue;
+        flex-direction: column;
+        height: 700px;
+        }
+        .second-Child,
+        .first-first-Child,
+        .third-first-Child,
+        .fourth-Child{
+        flex: 1;
+        }
+        .flex-container > div {
+        background-color: #f1f1f1;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        font-size: 30px;
+        }
+        .Child {
+        border: 2px solid black !important;
+        height: 50px;
+        font-size: 20px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white !important;
+        }
+        .first-Child,
+        .third-Child {
+        flex: 1;
+        }
+        .first-Child,
+        .third-Child {
+        display: flex;
+        }
+        .first-first-Child {
+        background-color: rgba(0, 68, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        }
+        .childClass1,
+        .fourthChild,
+        .thirdChild {
+        width: 70px;
+        height: 50px;
+        font-size: 15px;
+        background-color: rgb(90, 90, 195);
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: azure;
+        }
+        .second-Child,
+        .fourth-Child{
+        background-color: rgb(150, 250, 175);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .childClass2 {
+        background-color: rgb(255, 249, 215);
+        width: 90%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: bold;
+        border: 2px solid rgba(179, 176, 0, 0.938);
+        }
+        .third-first-Child{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: rgb(255, 249, 215);
+        border: 2px solid rgb(231, 228, 57);
+        }
+        .fourth-Child{
+        background-color: rgb(220, 182, 255);
+        border: 2px solid rgb(195, 27, 195);
+        }
+        .second-Child {
+        border-left: 2px solid rgb(84, 206, 84);
+        border-right: 2px solid rgb(9, 129, 9);
+        }
+        .first-first-Child {
+        border-left: 2px solid blue;
+        }   
+
+        @media (max-width: 450px){
+        .Child{
+            height: 35px;
+            font-size: 25px;
+        }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="Child">Design 1</div>
+      <div class="first-Child">
+        <div class="first-first-Child">
+          <div class="childClass1">Child</div>
+        </div>
+        <div class="second-Child">
+          <div class="childClass2">View outer margin should be same on all side</div>
+        </div>
+      </div>
+      <div class="third-Child">
+        <div class="third-first-Child">
+          <div class="thirdChild">Child</div>
+        </div>
+        <div class="fourth-Child">
+          <div class="fourthChild">Child</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
